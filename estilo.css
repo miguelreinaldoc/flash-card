@@ -72,3 +72,31 @@ h2 {
     transform: transform;
     transform-style: preserve-3d;
 }
+
+.cartao-frente, 
+.cartao-verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(245, 229, 5, 0.952); 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    background: white;
+}
+
+.cartao-verso {
+    transform: rotateY(180deg);
+}
+
+.cartao:hover .cartao-interno {
+    transform: rotateY(180deg);
+}
+car
+
+section {
+    display: flex;
+    gap: 16px;
+}
