@@ -39,9 +39,26 @@ main{
 
 .cartao {
     width: 260px;
-    height: 200px;
+    height: 360px;
+    border-radius: 20px;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+h1 {
+    color: antiquewhite;
+    font-size: 24px;
+
+}
+
+h2 {
+    color: brown;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .cartao-imagem {
     width: 100%;
+    
 }
