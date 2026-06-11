@@ -1,102 +1,109 @@
 * {
-    box-sizing: boxer-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: antiquewhite;
 }
 
 .cabecalho {
-    background-color: brown;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: brown;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .cabecalho-link {
-    color: brown;
-    text-decoration: none;
+  color: antiquewhite;
+  text-decoration: none;
 }
+
 footer {
-    background-color: antiquewhite;
-    padding: 15px 25px;
-    background-color: brown;
+  background-color: brown;
+  padding: 15px 25px;
+  color: #fff;
 }
 
-main{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.cartao {
-    width: 260px;
-    height: 360px;
-    border-radius: 20px;
-    overflow: hidden;
-    perspective: 1000px;
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-    color: antiquewhite;
-    font-size: 24px;
-
+  color: antiquewhite;
+  font-size: 24px;
 }
 
 h2 {
-    color: brown;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: brown;
+}
 
+.cartao {
+  width: 260px;
+  height: 360px;
+  border-radius: 20px;
+  overflow: hidden;
+  perspective: 1000px;
 }
 
 .cartao-imagem {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 12px;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;#fff
+  border-radius: 12px;
 }
 
 .cartao-interno {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform: transform;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 12px;
 }
 
-.cartao-frente, 
+.cartao-frente,
 .cartao-verso {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    box-shadow: 0 6px 12px rgba(245, 229, 5, 0.952); 
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px;
-    background: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 12px rgba(241, 218, 8, 0.15);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background: white;
+}
+
+.cartao-frente p,
+.cartao-verso p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3;
+  color: black;
 }
 
 .cartao-verso {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .cartao:hover .cartao-interno {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
-car
 
 section {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
